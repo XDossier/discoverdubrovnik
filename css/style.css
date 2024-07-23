@@ -161,13 +161,13 @@ html {
 header {
  width: 100%;
   height: 100vh;
-  background-image: url("https://h2.gifposter.com/bingImages/DubrovnikHarbor_1920x1080.jpg");
+  background-image: url("");
+  background-position: bottom;
   background-attachment: fixed;
-  background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
   display: flex;
-  align-items: center;
+  align-items: end;
+  justify-content: center;
   
 }
 
