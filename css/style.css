@@ -161,7 +161,7 @@ html {
 header {
   width: 100%;
   height: 100vh;
-  background-image: url("/img/du.jpg");
+  background-image: url("img/du.jpg");
   background-position: bottom;
   background-attachment: fixed;
   background-size: cover;
@@ -336,7 +336,7 @@ section {
 .explore {
   width: 100%;
   height: 100vh;
-  background-image: url(/img/panorama.jpg);
+  background-image: url("../img/panorama.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
