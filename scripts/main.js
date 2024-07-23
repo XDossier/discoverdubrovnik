@@ -1,24 +1,21 @@
-let navbar = document.querySelector('.navbar')
+let navbar = document.querySelector('.navbar');
 
-document.querySelector('#menu-bar').onclick = () =>{
+document.querySelector('#menu-bar').onclick = () => {
     navbar.classList.toggle('active');
-}
+};
 
-document.querySelector('#close').onclick = () =>{
+document.querySelector('#close').onclick = () => {
     navbar.classList.remove('active');
-}
+};
 
-window.onscroll = () =>{
-
+window.onscroll = () => {
     navbar.classList.remove('active');
-
-    if(window.scrollY > 100){
+    if (window.scrollY > 100) {
         document.querySelector('header').classList.add('active');
-    }else{
+    } else {
         document.querySelector('header').classList.remove('active');
     }
-
-}
+};
 
 let themeToggler = document.querySelector('#theme-toggler');
 
