@@ -21,6 +21,10 @@
     padding: 45px;
   }
 
+.img2{
+  display: none;
+}
+	
   .logo {
     position: absolute;
     top: 30px;
@@ -132,6 +136,10 @@
 		display: none;
 	}
 
+	.img2{
+  display: none;
+}
+
   .gallery {
     display: flex;
     justify-content: center;
@@ -229,6 +237,10 @@
   #about_us p {
     width: 70%;
   }
+
+	.img2{
+  display: none;
+}
 }
 
 @media screen and (max-width: 770px) {
