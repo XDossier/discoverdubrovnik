@@ -6,7 +6,9 @@
     flex-direction: column;
     width: 100%;
   }
-
+  .logo {
+    display: none;
+  }
   form,
   .cbox {
     margin: auto;
@@ -45,9 +47,7 @@
   }
 
   .logo {
-    position: absolute;
-    top: 20px;
-    left: 15px;
+    display: none;
   }
 
   .nav-links {
@@ -80,6 +80,10 @@
     transform-style: preserve-3d;
   }
 
+  .logo{
+    display: none;
+  }
+
   #about_us div {
     padding: 10px;
     display: block;
@@ -100,6 +104,9 @@
 /* For tablets and large phones */
 @media only screen and (max-width: 850px) {
   /* events */
+  .logo {
+    display: none;
+  }
   .row {
     flex-direction: column;
   }
@@ -178,12 +185,17 @@
     font-size: 0.8rem;
     padding: 8px 16px;
   }
+  
+
+  .logo{
+    display: none;
+  }
 }
 
 /* For extremely small screens (phones in portrait mode) */
 @media screen and (max-width: 480px) {
   .logo {
-    font-size: 1rem;
+    display: none;
   }
 
   .nav-links li {
