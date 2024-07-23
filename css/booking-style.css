@@ -13,7 +13,7 @@ body {
 .container-book {
     width: 100%;
     height: 100vh;
-    background-image: url(img/banje.PNG);
+    background-image: url(./img/banje.PNG);
     display: flex;
     align-items: center;
     justify-content: center;
