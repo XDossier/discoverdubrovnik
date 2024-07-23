@@ -1,3 +1,5 @@
+
+
 /* mobile responsiveness design */
 @media screen and (max-width: 990px) {
   .contact_us {
@@ -43,6 +45,68 @@
   .nav-links li {
     margin: 30px auto;
   }
+
+  .gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px; /* Add padding to prevent content from touching the edges */
+  }
+  
+  .container-gallery {
+    width: 100%;
+    max-width: 100%; /* Make sure the container does not exceed viewport width */
+    position: relative;
+  }
+  
+  /* Slider wrapper to center the slider */
+  .slider-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  /* Hide overflow and ensure images fit within the slider */
+  .slider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slider-item {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .slider-item img {
+    width: 100%;
+    height: auto;
+    display: block; /* Prevents the image from showing extra space below it */
+  }
+  
+  /* Style for the slider buttons */
+  .slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5); /* Add background for better visibility */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .slider-button.left {
+    left: 10px;
+  }
+  
+  .slider-button.right {
+    right: 10px;
+  }
+  
 }
 
 @media screen and (max-width: 1440px) {
@@ -67,6 +131,68 @@
 	#about-quad {
 		display: none;
 	}
+
+  .gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px; /* Add padding to prevent content from touching the edges */
+  }
+  
+  .container-gallery {
+    width: 100%;
+    max-width: 100%; /* Make sure the container does not exceed viewport width */
+    position: relative;
+  }
+  
+  /* Slider wrapper to center the slider */
+  .slider-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  /* Hide overflow and ensure images fit within the slider */
+  .slider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slider-item {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .slider-item img {
+    width: 100%;
+    height: auto;
+    display: block; /* Prevents the image from showing extra space below it */
+  }
+  
+  /* Style for the slider buttons */
+  .slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5); /* Add background for better visibility */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .slider-button.left {
+    left: 10px;
+  }
+  
+  .slider-button.right {
+    right: 10px;
+  }
+  
 }
 
 @media only screen and (max-width: 850px) {
