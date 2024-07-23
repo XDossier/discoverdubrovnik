@@ -11,7 +11,7 @@
         />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/responsive.css" />
-        <link rel="manifest" href="/site.webmanifest" />
+        
     </head>
     <body
         onload='if (window.location.href.substr(window.location.href.length - 6) == "#about") { introAboutLogoTransition(); }'
@@ -39,19 +39,10 @@
                 <li><a href="#contact" id="hept" class="cir_border">Contact</a></li>
                 <li><a href="booking.html" target="_blank" class="cir_border">Booking</a></li>
             </ul>
-            <img src="./img/menu-btn.png" alt="Menu" class="menu-btn" />
+           
         </nav>
     
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const menuBtn = document.querySelector('.menu-btn');
-                const navLinks = document.querySelector('.nav-links');
-    
-                menuBtn.addEventListener('click', function() {
-                    navLinks.classList.toggle('show-nav-links');
-                });
-            });
-        </script>
+      
         <!--navbar-->
 
         <header id="home">
@@ -119,11 +110,11 @@
                 </div>
             </div>
             <a
-            href="tours.html"
-            class="ctn"
-            
-            >Details</a
-        >
+                    href="tours.html"
+                    class="ctn"
+                    onclick='removeall(); $("#quad").css("border", "2px solid whitesmoke"); $("#quad").css("border-radius", "20px");'
+                    >Details</a
+                >
             
         </section>
         <!--Events-->
@@ -354,6 +345,6 @@ Licensed Tour Guide for Dubrovnik - Neretva County , Master Degree in Business a
             });
         </script>
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-        <script src="../stranica/scripts/main.js"></script>
+        <script src="scripts/main.js"></script>
     </body>
 </html>
