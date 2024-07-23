@@ -4,10 +4,6 @@
     flex-direction: column;
     width: 100%;
   }
-  .img2 {
-    display: none;
-  }
-
   form,
   .cbox {
     margin: auto;
@@ -17,10 +13,6 @@
 @media screen and (max-width: 1130px) {
   .menu-btn {
     display: block;
-  }
-
-  .img2 {
-    display: none;
   }
 
   .navbar {
@@ -33,10 +25,6 @@
     left: 15px;
   }
 
-  .navbar {
-    display: none;
-  }
-
   .nav-links {
     flex-direction: column;
     width: 100%;
@@ -47,10 +35,6 @@
     transition: all 0.5s ease;
   }
 
-
-  .navbar.active {
-    display: block; /* or use any other method to show the menu */
-  }
   .mobile-menu {
     margin-top: 602px;
     border-bottom-right-radius: 30%;
@@ -67,14 +51,6 @@
 	  bottom: 40%;
 	  transform-style: preserve-3d;
 	}
-
-  .img2 {
-    display: none;
-  }
-
-  .navbar.active {
-    display: block; /* or use any other method to show the menu */
-  }
 	
 	#about_us div {
 		padding: 10px;
@@ -99,13 +75,6 @@
     flex-direction: column;
   }
 
-  .navbar.active {
-    display: block; /* or use any other method to show the menu */
-  }
-
-  .img2 {
-    display: none;
-  }
   .row .col {
     margin: 20px auto;
   }
@@ -150,10 +119,6 @@
     margin: auto;
   }
 
-
-  .img2 {
-    display: none;
-  }
   .explore-content {
     margin: 0 auto;
     text-align: center;
@@ -168,10 +133,6 @@
   #about_us p {
     margin: auto;
   }
-
-  .img2 {
-    display: none;
-  }
 }
 @media screen and (max-width: 470px) {
   .ctn {
@@ -180,10 +141,6 @@
   .c_boxx a p {
     font-size: 17.5px;
   }
-
-  .img2 {
-    display: none;
-  }
 }
 @media screen and (max-width: 400px) {
   .ctn {
@@ -191,10 +148,6 @@
   }
   .c_boxx a p {
     font-size: 16px;
-  }
-
-  .img2 {
-    display: none;
   }
 }
 
@@ -212,9 +165,5 @@
   .content-col p {
     max-width: 75%;
     text-align: justify;
-  }
-
-  .img2 {
-    display: none;
   }
 }
