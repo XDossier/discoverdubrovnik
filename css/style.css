@@ -30,7 +30,8 @@
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
   display: block;
 }
 
@@ -63,8 +64,8 @@ html {
 }
 
 .container {
-  width: 98%;
-  max-width: 91rem;
+  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -100,7 +101,8 @@ html {
 .logo-container {
   display: flex;
   align-items: center;
-  min-width: 600px; /* Ensure minimum space for logo and title */
+  min-width: 600px; 
+  max-width: 100%;/* Ensure minimum space for logo and title */
 }
 
 .logo-link {
@@ -149,49 +151,6 @@ html {
   cursor: pointer;
 }
 
-/* Adjustments for smaller screens */
-@media (max-width: 768px) {
-  .navbar {
-    padding: 12px 10px;
-    flex-direction: column;
-    align-items: flex-start;
-    height: auto;
-  }
-
-  .logo-container {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 10px;
-  }
-
-  .logo {
-    font-size: 1.2rem;
-  }
-
-  .img2 {
-    width: 50px;
-    height: 65px;
-    margin-right: 0;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-  }
-
-  .nav-links.show-nav-links {
-    display: flex;
-  }
-
-  .menu-btn {
-    display: block;
-  }
-}
-
-/* Additional styles for showing menu links when menu button is clicked can be added here */
-
 
 .cir_border {
   padding: 6px 20px;
@@ -202,7 +161,7 @@ html {
 }
 
 header {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-image: url("../img/bgdu.JPG");
   background-position: bottom;
@@ -263,6 +222,8 @@ header {
   background: #fc036b;
   border-radius: 30px;
   color: whitesmoke;
+  align-items: center;
+  left: 50%;
 }
 
 .menu-btn {
@@ -276,11 +237,11 @@ header {
 
 /* Events */
 section {
-  width: 80%;
-  margin: 80px auto;
+  width: 100%;
+  margin: 40px auto;
 }
 .tours {
-  padding: 80px 0;
+  padding: 40px 0;
 }
 
 .container {
@@ -291,7 +252,7 @@ section {
 
 .title {
   text-align: center;
-  
+  margin: 40px auto;
   font-size: 4vmin;
 }
 
@@ -370,7 +331,7 @@ section {
 .explore {
   width: 100%;
   height: 100vh;
-  background-image: url(../img/panorama.jpg);
+  background-image: url(../img/srd.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
