@@ -1,3 +1,4 @@
+
 /* Google fonts */
 
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;800&family=Parisienne&family=Roboto&family=Teko:wght@300&display=swap");
@@ -30,8 +31,7 @@
 }
 
 img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
   display: block;
 }
 
@@ -65,7 +65,7 @@ html {
 
 .container {
   width: 100%;
-  max-width: 100%;
+  max-width: 91rem;
   margin: 0 auto;
 }
 
@@ -101,8 +101,7 @@ html {
 .logo-container {
   display: flex;
   align-items: center;
-  min-width: 600px; 
-  max-width: 100%;/* Ensure minimum space for logo and title */
+  min-width: 600px; /* Ensure minimum space for logo and title */
 }
 
 .logo-link {
@@ -151,7 +150,6 @@ html {
   cursor: pointer;
 }
 
-
 .cir_border {
   padding: 6px 20px;
   font-weight: bold;
@@ -180,15 +178,22 @@ header {
   z-index: 1;
   padding: 4rem;
   margin-bottom: 150px;
-  
+
 }
 
 /* Adding text stroke (outline) */
 .header-content h1{
-  -webkit-text-stroke: 1px rgb(0, 0, 0); /* Outline width and color */
-  text-shadow: 
-    2px 2px 4px rgba(0, 0, 0, 0.6), /* Black shadow with some transparency */
-    -2px -2px 4px rgba(0, 0, 0, 0.6); /* Additional shadow for better visibility */
+  font-family: var(--ff-rubik-dirt);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  font-weight: 300;
+  color: rgb(254, 252, 252);
+  white-space: nowrap; /* Prevent title from wrapping */
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  border-radius: 0.5rem;
+  
 }
 
 
@@ -198,6 +203,7 @@ header {
 
 .header-content h2 {
   font-size: 4vmin;
+  
 }
 
 .line {
@@ -222,8 +228,6 @@ header {
   background: #fc036b;
   border-radius: 30px;
   color: whitesmoke;
-  align-items: center;
-  left: 50%;
 }
 
 .menu-btn {
@@ -239,9 +243,10 @@ header {
 section {
   width: 100%;
   margin: 40px auto;
+  text-align: center;
 }
 .tours {
-  padding: 40px 0;
+  padding: 40px auto;
 }
 
 .container {
@@ -252,7 +257,7 @@ section {
 
 .title {
   text-align: center;
-  margin: 40px auto;
+
   font-size: 4vmin;
 }
 
@@ -331,7 +336,7 @@ section {
 .explore {
   width: 100%;
   height: 100vh;
-  background-image: url(../img/srd.jpg);
+  background-image: url(../img/panorama.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -395,7 +400,7 @@ section {
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   padding: 1rem;
- 
+
 }
 
 .tours .row {
@@ -511,7 +516,7 @@ section {
 }
 
 #about_us {
-  
+
   width: 100%;
   height: 630px;
   background-repeat: no-repeat;
@@ -585,11 +590,11 @@ width: 100%;
   font-family: "Montserrat", sans-serif;
 
   /* Centering adjustments */
-  
+
 }
 
 .concard {
-  
+
   padding: 0.2em 0.2em;
   color: #222;
   height: 3%;
@@ -602,13 +607,13 @@ width: 100%;
   align-items: center;
   justify-content: center;
   transition: background-color 0.5s ease, transform 0.6s ease, border-bottom 0.3s ease 0.2s;
- 
+
 }
 
 .concard .pfp {
   width: 30%;
   height: 40%;
- 
+
 }
 
 .text h1 {
@@ -617,7 +622,7 @@ width: 100%;
   font-weight: 400;
   font-size: 40px;
   font-family: "Teko", sans-serif;
-  
+
 }
 
 .logolink {
