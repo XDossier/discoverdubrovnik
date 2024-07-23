@@ -9,9 +9,26 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/responsive.css" />
-        
+        <link rel="stylesheet" href="../stranica/css/style.css" />
+        <link rel="stylesheet" href="../stranica/css/responsive.css" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="img/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="img/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="img/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
     </head>
     <body
         onload='if (window.location.href.substr(window.location.href.length - 6) == "#about") { introAboutLogoTransition(); }'
@@ -39,10 +56,19 @@
                 <li><a href="#contact" id="hept" class="cir_border">Contact</a></li>
                 <li><a href="booking.html" target="_blank" class="cir_border">Booking</a></li>
             </ul>
-           
+            <img src="./img/menu-btn.png" alt="Menu" class="menu-btn" />
         </nav>
-    
-      
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const menuBtn = document.querySelector('.menu-btn');
+                const navLinks = document.querySelector('.nav-links');
+
+                menuBtn.addEventListener('click', function() {
+                    navLinks.classList.toggle('show-nav-links');
+                });
+            });
+        </script>
         <!--navbar-->
 
         <header id="home">
@@ -70,52 +96,52 @@
                     <article class="card col">
                         <img src="img/dubrovnik3.jpg" />
                         <h4 class="dark">Discover Dubrovnik with Local Guide</h4>
-                       
-                        
+
+
                     </article>
                     <article class="card col">
                         <img src="./img/zidovska.JPG" />
                         <h4 class="dark">Private Jewish Heritage & Old Town Orientation</h4>
-                        
-                        
+
+
                     </article>
                     <article class="card col">
                         <img src="img/zidine.jpg" />
                         <h4 class="dark">Mighty Walls of Dubrovnik</h4>
-                        
-                        
+
+
                     </article>
                     <article class="card col">
                         <img src="./img/rat.jpg" />
                         <h4 class="dark">Dubrovnik's War for Peace </h4>
-                        
-                        
+
+
                     </article>
                     <article class="card col">
                         <img src="./img/got.png" />
                         <h4 class="dark">Game Of Thrones locations + History tour</h4>
-                       
+
                     </article>
                     <article class="card col">
                         <img src="./img/panorama.jpg" />
                         <h4 class="dark">Private panoramic excursion around Dubrovnik</h4>
-                       
+
                     </article>
                     <article class="card col">
                         <img src="./img/early.PNG" />
                         <h4 class="dark">Early Bird Tour</h4>
-                       
+
                     </article>
-                   
+
                 </div>
             </div>
             <a
-                    href="tours.html"
-                    class="ctn"
-                    onclick='removeall(); $("#quad").css("border", "2px solid whitesmoke"); $("#quad").css("border-radius", "20px");'
-                    >Details</a
-                >
-            
+            href="tours.html"
+            class="ctn"
+
+            >Details</a
+        >
+
         </section>
         <!--Events-->
 
@@ -127,7 +153,7 @@
                 <p>
                     <h4>Saint Augustine:</h4> "The world is a book, and those who do not travel read only one page." <br /><h4>George Bernard Shaw: </h4>"Those who seek paradise on Earth should come to Dubrovnik."
                 </p>
-                
+
             </div>
         </section>
         <!--Explore-->
@@ -151,16 +177,16 @@ I am looking forward to meeting you and to adjust your tour to to exceed your ex
 
 Licensed Tour Guide for Dubrovnik - Neretva County , Master Degree in Business and Economy, Professional licenced driver.
 
-                       
-                        
+
+
                     </p>
-                    
+
                 </div>
                 <div class="image-col">
                     <div class="image-gallery">
                         <img src="./img/mato.PNG" alt="" />
-                        
-                      
+
+
                     </div>
                 </div>
             </div>
@@ -267,21 +293,21 @@ Licensed Tour Guide for Dubrovnik - Neretva County , Master Degree in Business a
                         <img src="img/tripadv.png" alt="Tripadvisor-Logo" class="tripadvisor-logo" />
                     </a>
                 </div>
-                
+
             </div>
         </section>
         <!-- Contributions -->
 
         <!-- contact -->
-        
+
        <section id="contact">
         <div class="title">
             <h1 class="font-color">Contact</h1>
             <div class="line"></div>
         </div>
-                   
+
                 </form>
-                
+
                     </div>
                     <div class="c_boxx">
                         <a href="mailto:mtknego@gmail.com"
@@ -305,7 +331,7 @@ Licensed Tour Guide for Dubrovnik - Neretva County , Master Degree in Business a
                         class="ctn"
                         onclick='removeall(); $("#quad").css("border", "2px solid whitesmoke"); $("#quad").css("border-radius", "20px");'
                         >Learn more</a>
-                        
+
                     </div>
                 </div>
             </div>
@@ -328,9 +354,9 @@ Licensed Tour Guide for Dubrovnik - Neretva County , Master Degree in Business a
                         <a href="https://www.linkedin.com/in/luka-tot-96b74b1bb/" target="_blank">
                             <img src="img/linkedin.png" alt="LinkedIn-Logo" class="linkedin-logo" />
                         </a>
-                        
+
                     </div>
-                    
+
                 </li>
             </div>
         </section>
@@ -345,6 +371,6 @@ Licensed Tour Guide for Dubrovnik - Neretva County , Master Degree in Business a
             });
         </script>
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-        <script src="scripts/main.js"></script>
+        <script src="../stranica/scripts/main.js"></script>
     </body>
 </html>
